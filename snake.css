@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@405;500;600&display=swap');
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2E4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper{
+    background: #191825;
+    height: 70vmin;
+    width: 60vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    user-select: none;
+}
+.game-details{
+    color: #FEFAE0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.play-board{
+    height: 100%;
+    width: 100%;
+    background: #2C3333;
+    display: grid;
+    grid-template: repeat(30, 1fr)/repeat(30, 1fr);
+}
+.play-board .food{
+    background: #FF0032;
+}
+.play-board .head{
+    background: #03C988;
+}
